@@ -1,9 +1,9 @@
 /* Define all sections */
 body {
-    background: black;
+    background: white;
     margin: 0;
     font-size: 1.5em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     height: 100vh;
 
@@ -19,10 +19,10 @@ body {
 
 /* Header section */
 header {
-    background: #d30000;
+    background: lightpink;
 
     font-weight: bold;
-    color: white;
+    color: darkslategray;
 
     padding: 10px;
     grid-area: header;
@@ -31,34 +31,35 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
+        /* "brand nav tools"; */
         "brand brand"
         "nav tools";
 }
 
 header .brand {
-    background: red;
+    background: lightsalmon;
     grid-area: brand;
 }
 
 header nav {
-    background: red;
+    background: lightsalmon;
     grid-area: nav;
 }
 
 header .tools {
-    background: red;
+    background: lightsalmon;
     grid-area: tools;
 }
 
 
 /* Hero section */
 .hero {
-    background: #242525;
+    background: whitesmoke;
     padding: 10px;
     grid-area: hero;
 
     font-weight: lighter;
-    color: white;
+    color: black;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -68,19 +69,19 @@ header .tools {
 }
 
 .hero .action {
-    background: #484b49;
+    background: rgb(241, 239, 239);
     grid-area: action;
 }
 
 .hero .feature {
-    background: #484b49;
+    background: rgb(241, 239, 239);
     grid-area: feature;
 }
 
 
 /* Body section */
 main {
-    background: white;
+    background: lightsteelblue;
 
     padding: 10px;
     grid-area: body;
@@ -95,7 +96,7 @@ main {
 }
 
 main .feature {
-    background: #fdf5e6;
+    background: lightblue;
     grid-area: feature;
 }
 
@@ -104,18 +105,19 @@ main .mobile-ad {
 }
 
 main .listing {
-    background: #fdf5e6;
+    background: lightblue;
     grid-area: listing;
 }
 
 
 /* Footer section */
 footer {
-    background: black;
-    color: white;
+    background: lightblue;
+    color: black;
     font-weight: bold;
     padding: 10px;
     grid-area: footer;
+    font-style: italic;
 }
 
 
@@ -131,7 +133,7 @@ footer {
 
 /* Sidebar section */
 .sidebar {
-    background: white;
+    background: lightsteelblue;
     padding: 10px;
     grid-area: sidebar;
 
@@ -139,7 +141,7 @@ footer {
 }
 
 .sidebar .feature {
-    background: #fdf5e6;
+    background: lightblue;
     height: 100%;
 }
 
